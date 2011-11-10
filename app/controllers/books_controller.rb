@@ -41,7 +41,7 @@ class BooksController < ApplicationController
   # POST /books.xml
   def create
     @book = Book.new(params[:book])
-
+    @book.name = "Title of book: " + @book.title
     respond_to do |format|
       if @book.save
         format.html { redirect_to(@book, :notice => 'Book was successfully created.') }
