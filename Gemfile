@@ -31,5 +31,3 @@ gem 'sqlite3'
 # end
 
 gem 'citier'
-gem 'mysql'
-gem "mysql2", "~> 0.2.7"

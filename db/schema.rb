@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(:version => 20110428220607) do
   end
 
   create_table "view_books", :id => false, :force => true do |t|
-    t.integer  "id",         :default => 0, :null => false
+    t.integer  "id"
     t.string   "type"
     t.string   "name"
     t.integer  "price"
@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(:version => 20110428220607) do
   end
 
   create_table "view_dictionaries", :id => false, :force => true do |t|
-    t.integer  "id",         :default => 0, :null => false
+    t.integer  "id"
     t.string   "type"
     t.string   "name"
     t.integer  "price"
